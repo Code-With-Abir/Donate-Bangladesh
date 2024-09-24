@@ -30,7 +30,7 @@ cart1.addEventListener("click", function () {
 
   const title1 = document.getElementById('title1').innerText;
   const currentDateTime = new Date();
-  const time = 'date:'+ currentDateTime.toString();
+  const time = 'Date:'+ currentDateTime.toString();
 
   if (mainBalance > inputValue1 || inputValue1 === Number || inputValue1 > 0) {
     const newBalance1 = cart1Balance + inputValue1;
@@ -43,11 +43,10 @@ cart1.addEventListener("click", function () {
     document.getElementById('modal').classList.remove('hidden')
 
     const div = document.createElement("div");
-    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4"
+    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4 rounded-xl"
     div.innerHTML = `
-          <h1 class="">${inputValue1}</h1>
-          <h1>${title1}</h1>
-          <p>${time}</p>
+          <h1 class=" text-xl font-bold">${inputValue1} Taka is Donated For ${title1}</h1>
+          <p class="font-semibold">${time}</p>
 `;
 
     const historySection = document.getElementById("history-section");
@@ -72,7 +71,7 @@ cart2.addEventListener("click", function () {
 
     const title2 = document.getElementById('title2').innerText;
     const currentDateTime = new Date();
-    const time = 'date:'+ currentDateTime.toString();
+    const time = 'Date:'+ currentDateTime.toString();
 
   if (mainBalance > inputValue2 || inputValue2 === Number || inputValue2 > 0) {
     const newBalance2 = cart1Balance + inputValue2;
@@ -85,11 +84,10 @@ cart2.addEventListener("click", function () {
     document.getElementById('modal').classList.remove('hidden')
 
     const div = document.createElement("div");
-    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4"
+    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4 rounded-xl"
     div.innerHTML = `
-          <h1 class="">${inputValue2}</h1>
-          <h1>${title2}</h1>
-          <p>${time}</p>
+          <h1 class=" text-xl font-bold">${inputValue2} Taka is Donated For ${title2}</h1>
+          <p class="font-semibold">${time}</p>
 `;
     const historySection = document.getElementById("history-section");
     historySection.insertBefore(div, historySection.firstChild);
@@ -118,7 +116,7 @@ cart3.addEventListener("click", function () {
 
   const title3 = document.getElementById('title3').innerText;
   const currentDateTime = new Date();
-  const time = 'date:'+ currentDateTime.toString();
+  const time = 'Date:'+ currentDateTime.toString();
 
   if (mainBalance > inputValue3 || inputValue3 === Number || inputValue3 > 0) {
     const newBalance3 = cart1Balance + inputValue3;
@@ -131,11 +129,10 @@ cart3.addEventListener("click", function () {
     document.getElementById('modal').classList.remove('hidden')
 
     const div = document.createElement("div");
-    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4"
+    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4 rounded-xl"
     div.innerHTML = `
-          <h1 class="">${inputValue3}</h1>
-          <h1>${title3}</h1>
-          <p>${time}</p>
+          <h1 class=" text-xl font-bold">${inputValue3} Taka is Donated For ${title3}</h1>
+          <p class="font-semibold">${time}</p>
 `;
     const historySection = document.getElementById("history-section");
     historySection.insertBefore(div, historySection.firstChild);
@@ -147,56 +144,7 @@ cart3.addEventListener("click", function () {
 
 //*...............
 
-// //! cart-4
-
-// const cart4 = document.getElementById("donatenow4");
-// cart4.addEventListener("click", function () {
-//   const mainBalance = parseFloat(
-//     document.getElementById("mianBalace").innerText
-//   );
-//   const cart1Balance = parseFloat(
-//     document.getElementById("cart4-Balance").innerText
-//   );
-//   const inputValue4 = parseFloat(
-//     document.getElementById("donateAmount4").value
-//   );
-
-
-//   const title4 = document.getElementById('title4').innerText;
-//   const currentDateTime = new Date();
-//   const time = 'date:'+ currentDateTime.toString();
-
-
-//   if (mainBalance > inputValue4 || inputValue4 === Number || inputValue4 > 0) {
-//     const newBalance4 = cart1Balance + inputValue4;
-//     document.getElementById("cart4-Balance").innerText = newBalance4;
-
-//     const newMainBanalce = mainBalance - inputValue4;
-//     document.getElementById("mianBalace").innerText = newMainBanalce;
-//     document.getElementById("donateAmount4").value = "";
-
-//     document.getElementById('modal').classList.remove('hidden')
-
-//     const div = document.createElement("div");
-//     div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4"
-//     div.innerHTML = `
-//           <h1 class="">${inputValue4}</h1>
-//           <h1>${title4}</h1>
-//           <p>${time}</p>
-// `;
-//     const historySection = document.getElementById("history-section");
-//     historySection.insertBefore(div, historySection.firstChild);
-
-//   } 
-//   else {
-//     alert("Invalide Donated Amount");
-//   }
-// });
-
-// //*...............
-
-// //! cart-5
-
+// 
 const cart5 = document.getElementById("donatenow5");
 cart5.addEventListener("click", function () {
   const mainBalance = parseFloat(
@@ -211,7 +159,7 @@ cart5.addEventListener("click", function () {
 
   const title5 = document.getElementById('title5').innerText;
   const currentDateTime = new Date();
-  const time = 'date:'+ currentDateTime.toString();
+  const time = 'Date:'+ currentDateTime.toString();
   
 
   if (mainBalance > inputValue5 || inputValue5 === Number || inputValue5 > 0) {
@@ -225,11 +173,10 @@ cart5.addEventListener("click", function () {
     document.getElementById('modal').classList.remove('hidden')
 
     const div = document.createElement("div");
-    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4"
+    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4 rounded-xl"
     div.innerHTML = `
-          <h1 class="">${inputValue5}</h1>
-          <h1>${title5}</h1>
-          <p>${time}</p>
+          <h1 class=" text-xl font-bold">${inputValue5}Taka is Donated For ${title5}</h1>
+          <p class="font-semibold">${time}</p>
 `;
     const historySection = document.getElementById("history-section");
     historySection.insertBefore(div, historySection.firstChild);
@@ -258,12 +205,23 @@ historyButtton.addEventListener("click", function () {
   document
     .getElementById("donation")
     .classList.remove(
-      "bg-[#b4f461]",
-      "py-2",
-      "px-10",
-      "rounded-lg",
-      "text-black",
-      "font-bold"
+        "bg-[#b4f461]",
+        "py-2",
+        "px-10",
+        "rounded-lg",
+        "text-black",
+        "font-bold"
+    );
+  document
+    .getElementById("donation")
+    .classList.add(
+        "outline",
+        "outline-gray-300",
+        "py-2",
+        "px-10",
+        "rounded-lg",
+        "text-black",
+        "font-bold"
     );
   document.getElementById("history-section").classList.remove("hidden");
   document.getElementById("card-prt").classList.add("hidden");
