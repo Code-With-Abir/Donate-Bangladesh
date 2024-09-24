@@ -175,7 +175,7 @@ cart5.addEventListener("click", function () {
     const div = document.createElement("div");
     div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4 rounded-xl"
     div.innerHTML = `
-          <h1 class=" text-xl font-bold">${inputValue5}Taka is Donated For ${title5}</h1>
+          <h1 class=" text-xl font-bold">${inputValue5} Taka is Donated For ${title5}</h1>
           <p class="font-semibold">${time}</p>
 `;
     const historySection = document.getElementById("history-section");
