@@ -10,22 +10,34 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../style.css" />
+    <style>
+h1{
+    color: black;
+}
+p{
+    color: black;
+}
+button{
+    color: black;
+}
+    </style>
     <title>Bangladesh Donation</title>
   </head>
   <body>
     <header class="sticky top-0  border-b-[1px] z-[1000] ">
       <div class="nav-container bg-[#F9F7F3]  bg-transparent backdrop-blur-md">
         <nav class="flex w-10/12 mx-auto py-6 justify-between items-center">
-          <button
+          <a href="../html/blog.html">
+            <button
             class="py-2 px-10 rounded-[10px] bg-[#b4f461] text-black font-bold"
             id="blog"
           >
             Blog
           </button>
+          </a>
           <div class="name md:flex items-center gap-3">
             <div class="lg:w-[2vw] md:w-[4vw] w-[7vw]">
-              <img src="../assets/logo.png" alt="" />
+              <img src="./assets/logo.png" alt="" />
             </div>
             <h1 class="font-bold md:text-xl hidden md:block">
               Bangladesh Donation
@@ -34,7 +46,7 @@
           <div class="balance flex items-center gap-1">
             <div class="">
               <div class="lg:w-[2vw] md:w-[5vw] w-[10w]">
-                <img src="../assets/coin.png" alt="" />
+                <img src="./assets/coin.png" alt="" />
               </div>
             </div>
             <h1 class="text-lg font-semibold" id="mianBalace">15000</h1>
@@ -141,7 +153,7 @@
                     <span class="pl-1 font-semibold text-black">BDT</span>
                   </div>
                 </div>
-                <h1 class="text-xl font-bold pt-6">
+                <h1 class="text-xl font-bold pt-6" id="title2">
                   Donate for Flood Relief in Feni,Bangladesh
                 </h1>
                 <p class="pt-6 leading-6">
@@ -195,7 +207,7 @@
                     <span class="pl-1 font-semibold text-black">BDT</span>
                   </div>
                 </div>
-                <h1 class="text-xl font-bold pt-6">
+                <h1 class="text-xl font-bold pt-6" id="title3">
                   Aid for Injured in the Quota Movement
                 </h1>
                 <p class="pt-6 leading-6">
@@ -223,7 +235,8 @@
             </div>
           </div>
 
-          <div class="cart-4">
+
+          <div class="cart-5">
             <div
               class="cart1 p-3 grid grid-cols-1 md:grid-cols-2  border border-gray-200 rounded-2xl gap-8"
             >
@@ -231,61 +244,7 @@
                 <!-- <img src="../assets/feni.png" alt="" /> -->
                 <div
                   class="h-full w-full bg-no-repeat bg-cover"
-                  style="background-image: url(./assets/poor.png)"
-                ></div>
-              </div>
-
-              <div class="right">
-                <div
-                  class="balance inline-flex items-center bg-gray-300 py-2 px-6 rounded-lg"
-                >
-                  <div class="flex items-center">
-                    <div class="lg:w-[1.7vw] w-[9vw]">
-                      <img src="../assets/coin.png" class="" alt="" />
-                    </div>
-                    <h1 class="font-bold text-lg ml-2" id="cart4-Balance">
-                      30092
-                    </h1>
-                    <span class="pl-1 font-semibold text-black">BDT</span>
-                  </div>
-                </div>
-                <h1 class="text-xl font-bold pt-6">
-                  Donate for Poor People in, Bangladesh
-                </h1>
-                <p class="pt-6 leading-6">
-                  The recent floods in Noakhali have caused significant damage
-                  to homes infrastructure. Your donation will help provide
-                  essential supplies and to those affected by this disaster.
-                  Every contribution, big or small, makes difference. Please
-                  join us in supporting the relief efforts and making a positive
-                  impact on the lives of those in need.
-                </p>
-                <input
-                  type="text"
-                  class="bg-white rounded-lg outline-1 outline-gray-200 px-3 py-3 block outline w-full mt-7 text-black"
-                  name=""
-                  id="donateAmount4"
-                  placeholder="White Donation Amount"
-                />
-                <button
-                  id="donatenow4"
-                  class="bg-[#b4f461] mx-auto rounded-lg py-3 px-5 text-xl font-bold text-black mt-2 w-full"
-                >
-                  Donate Now
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="cart-4">
-            <div
-              class="cart1 p-3 grid grid-cols-1 md:grid-cols-2  border border-gray-200 rounded-2xl gap-8"
-            >
-              <div class="left h-full w-full rounded-2xl overflow-hidden">
-                <!-- <img src="../assets/feni.png" alt="" /> -->
-                <div
-                  class="h-full w-full bg-no-repeat bg-cover"
-                  style="background-image: url(index.html)"
+                  style="background-image: url(./assets/palestine.png)"
                 ></div>
               </div>
 
@@ -303,7 +262,7 @@
                     <span class="pl-1 font-semibold text-black">BDT</span>
                   </div>
                 </div>
-                <h1 class="text-xl font-bold pt-6">
+                <h1 class="text-xl font-bold pt-6" id="title5">
                   Donate for Palestine People in, Palestine
                 </h1>
                 <p class="pt-6 leading-6">

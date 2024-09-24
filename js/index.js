@@ -27,10 +27,10 @@ cart1.addEventListener("click", function () {
   const mainBalance = valueFloat("mianBalace");
   const cart1Balance = valueFloat("cart1-Balance");
   const inputValue1 = valueGet("donateAmount1");
+
   const title1 = document.getElementById('title1').innerText;
   const currentDateTime = new Date();
   const time = 'date:'+ currentDateTime.toString();
-  console.log(mainBalance);
 
   if (mainBalance > inputValue1 || inputValue1 === Number || inputValue1 > 0) {
     const newBalance1 = cart1Balance + inputValue1;
@@ -64,14 +64,15 @@ cart1.addEventListener("click", function () {
 const cart2 = document.getElementById("donatenow2");
 cart2.addEventListener("click", function () {
   const mainBalance = parseFloat(
-    document.getElementById("mianBalace").innerText
-  );
+    document.getElementById("mianBalace").innerText);
   const cart1Balance = parseFloat(
-    document.getElementById("cart2-Balance").innerText
-  );
+    document.getElementById("cart2-Balance").innerText);
   const inputValue2 = parseFloat(
-    document.getElementById("donateAmount2").value
-  );
+    document.getElementById("donateAmount2").value);
+
+    const title2 = document.getElementById('title2').innerText;
+    const currentDateTime = new Date();
+    const time = 'date:'+ currentDateTime.toString();
 
   if (mainBalance > inputValue2 || inputValue2 === Number || inputValue2 > 0) {
     const newBalance2 = cart1Balance + inputValue2;
@@ -80,7 +81,21 @@ cart2.addEventListener("click", function () {
     const newMainBanalce = mainBalance - inputValue2;
     document.getElementById("mianBalace").innerText = newMainBanalce;
     document.getElementById("donateAmount2").value = "";
-  } else {
+
+    document.getElementById('modal').classList.remove('hidden')
+
+    const div = document.createElement("div");
+    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4"
+    div.innerHTML = `
+          <h1 class="">${inputValue2}</h1>
+          <h1>${title2}</h1>
+          <p>${time}</p>
+`;
+    const historySection = document.getElementById("history-section");
+    historySection.insertBefore(div, historySection.firstChild);
+  } 
+  
+  else {
     alert("Invalide Donated Amount");
   }
 });
@@ -101,6 +116,10 @@ cart3.addEventListener("click", function () {
     document.getElementById("donateAmount3").value
   );
 
+  const title3 = document.getElementById('title3').innerText;
+  const currentDateTime = new Date();
+  const time = 'date:'+ currentDateTime.toString();
+
   if (mainBalance > inputValue3 || inputValue3 === Number || inputValue3 > 0) {
     const newBalance3 = cart1Balance + inputValue3;
     document.getElementById("cart3-Balance").innerText = newBalance3;
@@ -108,6 +127,19 @@ cart3.addEventListener("click", function () {
     const newMainBanalce = mainBalance - inputValue3;
     document.getElementById("mianBalace").innerText = newMainBanalce;
     document.getElementById("donateAmount3").value = "";
+
+    document.getElementById('modal').classList.remove('hidden')
+
+    const div = document.createElement("div");
+    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4"
+    div.innerHTML = `
+          <h1 class="">${inputValue3}</h1>
+          <h1>${title3}</h1>
+          <p>${time}</p>
+`;
+    const historySection = document.getElementById("history-section");
+    historySection.insertBefore(div, historySection.firstChild);
+
   } else {
     alert("Invalide Donated Amount");
   }
@@ -115,35 +147,55 @@ cart3.addEventListener("click", function () {
 
 //*...............
 
-//! cart-4
+// //! cart-4
 
-const cart4 = document.getElementById("donatenow4");
-cart4.addEventListener("click", function () {
-  const mainBalance = parseFloat(
-    document.getElementById("mianBalace").innerText
-  );
-  const cart1Balance = parseFloat(
-    document.getElementById("cart4-Balance").innerText
-  );
-  const inputValue4 = parseFloat(
-    document.getElementById("donateAmount4").value
-  );
+// const cart4 = document.getElementById("donatenow4");
+// cart4.addEventListener("click", function () {
+//   const mainBalance = parseFloat(
+//     document.getElementById("mianBalace").innerText
+//   );
+//   const cart1Balance = parseFloat(
+//     document.getElementById("cart4-Balance").innerText
+//   );
+//   const inputValue4 = parseFloat(
+//     document.getElementById("donateAmount4").value
+//   );
 
-  if (mainBalance > inputValue4 || inputValue4 === Number || inputValue4 > 0) {
-    const newBalance4 = cart1Balance + inputValue4;
-    document.getElementById("cart4-Balance").innerText = newBalance4;
 
-    const newMainBanalce = mainBalance - inputValue4;
-    document.getElementById("mianBalace").innerText = newMainBanalce;
-    document.getElementById("donateAmount4").value = "";
-  } else {
-    alert("Invalide Donated Amount");
-  }
-});
+//   const title4 = document.getElementById('title4').innerText;
+//   const currentDateTime = new Date();
+//   const time = 'date:'+ currentDateTime.toString();
 
-//*...............
 
-//! cart-4
+//   if (mainBalance > inputValue4 || inputValue4 === Number || inputValue4 > 0) {
+//     const newBalance4 = cart1Balance + inputValue4;
+//     document.getElementById("cart4-Balance").innerText = newBalance4;
+
+//     const newMainBanalce = mainBalance - inputValue4;
+//     document.getElementById("mianBalace").innerText = newMainBanalce;
+//     document.getElementById("donateAmount4").value = "";
+
+//     document.getElementById('modal').classList.remove('hidden')
+
+//     const div = document.createElement("div");
+//     div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4"
+//     div.innerHTML = `
+//           <h1 class="">${inputValue4}</h1>
+//           <h1>${title4}</h1>
+//           <p>${time}</p>
+// `;
+//     const historySection = document.getElementById("history-section");
+//     historySection.insertBefore(div, historySection.firstChild);
+
+//   } 
+//   else {
+//     alert("Invalide Donated Amount");
+//   }
+// });
+
+// //*...............
+
+// //! cart-5
 
 const cart5 = document.getElementById("donatenow5");
 cart5.addEventListener("click", function () {
@@ -157,6 +209,11 @@ cart5.addEventListener("click", function () {
     document.getElementById("donateAmount5").value
   );
 
+  const title5 = document.getElementById('title5').innerText;
+  const currentDateTime = new Date();
+  const time = 'date:'+ currentDateTime.toString();
+  
+
   if (mainBalance > inputValue5 || inputValue5 === Number || inputValue5 > 0) {
     const newBalance5 = cart5Balance + inputValue5;
     document.getElementById("cart5-Balance").innerText = newBalance5;
@@ -164,6 +221,19 @@ cart5.addEventListener("click", function () {
 
     document.getElementById("mianBalace").innerText = newMainBanalce;
     document.getElementById("donateAmount5").value = "";
+
+    document.getElementById('modal').classList.remove('hidden')
+
+    const div = document.createElement("div");
+    div.className = "bg-slate-100 border-[1px]  border-gray-300 p-4"
+    div.innerHTML = `
+          <h1 class="">${inputValue5}</h1>
+          <h1>${title5}</h1>
+          <p>${time}</p>
+`;
+    const historySection = document.getElementById("history-section");
+    historySection.insertBefore(div, historySection.firstChild);
+
   } else {
     alert("Invalide Donated Amount");
   }
